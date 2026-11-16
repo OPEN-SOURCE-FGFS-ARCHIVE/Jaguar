@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList> 
+
+  <path>chronograph.ac</path>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>HourHand</object-name>
+    <object-name>MinuteHand</object-name>
+    <object-name>SecondHand</object-name>
+    <object-name>ElapsedMinutesHand</object-name>
+    <emission>
+      <red>   0.9 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+    </emission>
+  </animation>
+
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>HourHand</object-name>
+    <property>instrumentation/clock/indicated-sec</property>
+    <factor> 0.00833333333333333 </factor>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>MinuteHand</object-name>
+    <property>instrumentation/clock/indicated-sec</property>
+    <factor> 0.1 </factor>
+    <axis> 
+    <x> -1 </x>
+    <y>  0 </y>
+    <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>SecondHand</object-name>
+    <property>instrumentation/clock/elapsed-sec</property>
+    <factor> 6 </factor>
+    <axis> 
+    <x> -1 </x>
+    <y>  0 </y>
+    <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>ElapsedMinutesHand</object-name>
+    <property>instrumentation/clock/elapsed-sec</property>
+    <factor> 0.1 </factor>
+    <axis> 
+    <x> -1 </x>
+    <y>  0 </y>
+    <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Clock Setting Knob -->
+  <animation>
+    <type>knob</type>
+    <object-name>time-adjust-knob</object-name>
+    <property>instrumentation/clock/offset-sec</property>
+    <factor>0</factor>
+    <axis>
+      <object-name>time-adjust-knob-axis</object-name>
+    </axis>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/clock/offset-sec</property>
+        <factor>60</factor>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Chronometer Start Stop Button -->
+  <animation>
+    <name>start-stop-reset</name>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>chronometer-button</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>chronograph.click()</script>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>
+

@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+
+<!-- Airspeed Indicator, by Dave Culp -->
+
+<PropertyList>
+
+ <path>AS.ac</path>
+
+ <!--  Instrument Lighting -->
+ <animation>
+  <type>material</type>
+  <object-name>face</object-name>
+  <object-name>Airspeedneedle</object-name>
+  <object-name>speed-bug</object-name>
+    <emission>
+      <red>   0.9 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+    </emission>
+ </animation> 
+
+ <!-- Airspeed Needle -->
+ <animation>
+  <type>rotate</type>
+  <object-name>Airspeedneedle</object-name>
+  <property>velocities/airspeed-kt</property>
+  <interpolation>
+    <entry>
+      <ind>0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>100</ind>
+      <dep>45.5</dep>
+    </entry>
+    <entry>
+      <ind>200</ind>
+      <dep>122.0</dep>
+    </entry>
+    <entry>
+      <ind>300</ind>
+      <dep>187.5</dep>
+    </entry>
+    <entry>
+      <ind>400</ind>
+      <dep>247.0</dep>
+    </entry>
+    <entry>
+      <ind>500</ind>
+      <dep>273</dep>
+    </entry>
+    <entry>
+      <ind>800</ind>
+      <dep>350.0</dep>
+    </entry>
+  </interpolation>   
+  <center>
+   <x-m>-0.00000</x-m>
+   <y-m> 0.00000</y-m>
+   <z-m>-0.00000</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y> 0</y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>speed-bug</object-name>
+  <property>instrumentation/airspeed-indicator/speed-limit-bug</property>
+  <interpolation>
+    <entry>
+      <ind>0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>100</ind>
+      <dep>45.5</dep>
+    </entry>
+    <entry>
+      <ind>200</ind>
+      <dep>122.0</dep>
+    </entry>
+    <entry>
+      <ind>300</ind>
+      <dep>187.5</dep>
+    </entry>
+    <entry>
+      <ind>400</ind>
+      <dep>247.0</dep>
+    </entry>
+    <entry>
+      <ind>500</ind>
+      <dep>273</dep>
+    </entry>
+    <entry>
+      <ind>800</ind>
+      <dep>350.0</dep>
+    </entry>
+  </interpolation>   
+  <center>
+   <x-m>-0.00104</x-m>
+   <y-m>-0.00004</y-m>
+   <z-m> 0.00015</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Air Speed Indicator's Bug Setting -->
+<animation>
+  <type>knob</type>
+  <object-name>button</object-name>
+  <property>sim/model/f15/instrumentation/airspeed-indicator/safe-speed-limit-bug</property>
+  <factor>0</factor>
+  <axis>
+    <object-name>button-axis</object-name>
+  </axis>
+
+  <action>
+      <binding>
+          <command>property-adjust</command>
+          <property>instrumentation/airspeed-indicator/speed-limit-bug</property>
+
+          <factor>10</factor>
+          <min>0</min>
+          <max>750</max>
+          <wrap>false</wrap>
+      </binding>
+  </action>
+</animation>
+
+
+
+ <!--  Mach Digits, ones, tenths, hundredths. -->
+ <animation>
+    <type>textranslate</type>
+    <object-name>mach-drum1</object-name>
+    <property>instrumentation/airspeed-indicator/indicated-mach</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <scroll>0.01</scroll>
+    <axis>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+    </axis>
+</animation>
+
+<animation>
+    <type>textranslate</type>
+    <object-name>mach-drum2</object-name>
+    <property>instrumentation/airspeed-indicator/indicated-mach</property>
+    <factor>1</factor>
+    <step>0.1</step>
+    <scroll>0.01</scroll>
+    <axis>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+    </axis>
+</animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>mach-drum3</object-name>
+    <property>instrumentation/airspeed-indicator/indicated-mach</property>
+    <factor>10</factor>
+    <axis>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+    </axis>
+</animation>
+<animation>
+  <type>select</type>
+  <object-name>mach-flag</object-name>
+  <condition>
+          <less-than>
+            <property>instrumentation/airspeed-indicator/indicated-mach</property>
+            <value>0.3</value>
+          </less-than>
+  </condition>
+</animation>
+
+
+</PropertyList>

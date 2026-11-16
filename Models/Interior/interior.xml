@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/Jaguar/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.060 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Jaguar/Models/Interior/Panel/3D-Models/Throttles.xml</path>
+    <offsets>
+      <x-m> -0.170 </x-m>
+      <y-m> -0.048 </y-m>
+      <z-m> -0.028 </z-m>
+      <pitch-deg>-0</pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Jaguar/Models/Interior/Panel/Instruments/divers/stick.xml</path>
+    <offsets>
+      <x-m> -3.200 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m> -0.480 </z-m>
+      <pitch-deg>-0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Jaguar/Models/Interior/Panel/Instruments/divers/pedals.xml</path>
+    <offsets>
+      <x-m> -3.600 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m> -0.500 </z-m>
+      <pitch-deg>-0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Pilote -->
+  <model>
+    <name>Pilote</name>
+    <path>Aircraft/Jaguar/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -2.736 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.097 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Pilot invisible from internally -->
+
+    <animation>
+        <type>select</type>
+        <object-name>Pilote</object-name>
+		<condition>
+<not>
+            <property>sim/current-view/internal</property>
+</not>
+        </condition>
+    </animation>		
+  
+
+  <!-- Canopy -->
+  <animation>
+    <type>rotate</type>
+    <object-name>intverriere</object-name>
+    <property>canopy/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 60 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -2.148 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.642 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+ 
+  <effect>
+        <inherits-from>Effects/glass</inherits-from>
+      <object-name>intvitres</object-name>
+		<object-name>intverriere</object-name>
+	
+    </effect>
+  
+
+</PropertyList>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>A-10-rwr.ac</path>
+
+  <animation> 
+   <type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.9 </green>
+      <blue>  0.9 </blue>
+    </emission>
+  </animation>
+
+<!-- lighting -->   
+<animation> 
+   <object-name>mount</object-name>
+   <type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.9 </green>
+      <blue>  0.9 </blue>
+    </emission>
+  </animation>
+
+  <animation> 
+   <object-name>Adj-Knob</object-name>
+   <type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.9 </green>
+      <blue>  0.9 </blue>
+    </emission>
+  </animation>
+
+</PropertyList>

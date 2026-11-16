@@ -1,0 +1,277 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+
+	<path>A-10-sas.ac</path>
+	
+	<!-- Yaw SAS switch -->
+	<animation>
+		<object-name>yaw-L-switch</object-name>
+		<type>rotate</type>
+		<property>fdm/jsbsim/sas/yaw-l</property>
+		<factor>-60</factor>
+		<axis>
+			<object-name>yaw-L-switch-axis</object-name>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>yaw-L-switch</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>fdm/jsbsim/sas/yaw-l</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<object-name>yaw-R-switch</object-name>
+		<type>rotate</type>
+		<property>fdm/jsbsim/sas/yaw-r</property>
+		<factor>-60</factor>
+		<axis>
+			<object-name>yaw-R-switch-axis</object-name>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>yaw-R-switch</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>fdm/jsbsim/sas/yaw-r</property>
+			</binding>
+		</action>
+	</animation>
+	
+	<!-- Pitch SAS switch -->
+	<animation>
+		<object-name>pitch-L-switch</object-name>
+		<type>rotate</type>
+		<property>fdm/jsbsim/sas/pitch-l</property>
+		<factor>-60</factor>
+		<axis>
+			<object-name>pitch-L-switch-axis</object-name>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>pitch-L-switch</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>fdm/jsbsim/sas/pitch-l</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<object-name>pitch-R-switch</object-name>
+		<type>rotate</type>
+		<property>fdm/jsbsim/sas/pitch-r</property>
+		<factor>-60</factor>
+		<axis>
+			<object-name>pitch-R-switch-axis</object-name>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>pitch-R-switch</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>fdm/jsbsim/sas/pitch-r</property>
+			</binding>
+		</action>
+	</animation>
+
+	<!-- roll SAS switch -->
+	<animation>
+		<object-name>roll-L-switch</object-name>
+		<type>rotate</type>
+		<property>fdm/jsbsim/sas/roll-l</property>
+		<factor>-60</factor>
+		<axis>
+			<object-name>roll-L-switch-axis</object-name>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>roll-L-switch</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>fdm/jsbsim/sas/roll-l</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<object-name>roll-R-switch</object-name>
+		<type>rotate</type>
+		<property>fdm/jsbsim/sas/roll-r</property>
+		<factor>-60</factor>
+		<axis>
+			<object-name>roll-R-switch-axis</object-name>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>roll-R-switch</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>fdm/jsbsim/sas/roll-r</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<type>knob</type>
+		<object-name>yaw-trim-knob</object-name>
+		<property>fdm/jsbsim/sas/yaw-trim</property>
+		<factor>-135</factor>
+		<axis>
+		  <object-name>yaw-trim-knob-axis</object-name>
+		</axis>
+		
+		<action>
+			<binding>
+				<command>property-adjust</command>
+				<property>fdm/jsbsim/sas/yaw-trim</property>
+  
+				<factor>0.1</factor>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>false</wrap>
+			</binding>
+		</action>		
+	  </animation>
+
+	
+
+	<!-- lighting -->
+
+	<!-- mount -->
+	<animation> 
+		<object-name>mount</object-name>
+		<type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
+    </emission>
+	</animation>
+
+	<animation> 
+		<object-name>pitch-R-switch</object-name>
+		<type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.2 </green>
+      <blue>  0.2</blue>
+    </emission>
+	</animation>
+
+	<animation> 
+		<object-name>pitch-L-switch</object-name>
+		<type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
+    </emission>
+	</animation>
+
+	<animation> 
+		<object-name>yaw-R-switch</object-name>
+		<type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
+    </emission>
+	</animation>
+
+	<animation> 
+		<object-name>yaw-L-switch</object-name>
+		<type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
+    </emission>
+	</animation>
+
+
+	<animation> 
+		<object-name>monitor-test-switch</object-name>
+		<type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
+    </emission>
+	</animation>
+
+	<animation> 
+		<object-name>to-trim-button</object-name>
+		<type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
+    </emission>
+	</animation>
+
+	<animation> 
+		<object-name>yaw-trim-knob</object-name>
+		<type>material</type>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
+    </emission>
+	</animation>
+
+	<!--<animation> 
+		<object-name>to-trim-light-on</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/panel-norm</factor-prop>
+			<red>1</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>-->
+
+
+</PropertyList>

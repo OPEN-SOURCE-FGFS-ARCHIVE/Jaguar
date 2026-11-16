@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>orangelight.ac</path> 
+
+    <animation>
+     <object-name>mount</object-name>
+      <object-name>NWS-off</object-name>
+      <object-name>NWS-on</object-name>
+   </animation>
+
+ <animation>
+  <type>material</type>
+     <object-name>mount</object-name>
+    <emission>
+      <red>   0.9 </red>
+      <green> 0.9 </green>
+      <blue>  0.9 </blue>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+    </emission>
+   </animation>
+
+
+<animation>
+ <type>select</type> 
+ <object-name>NWS-on</object-name>
+ <condition>	  		
+    <property>controls/gear/nose-wheel-steering</property>
+    <value>1</value>
+ </condition>
+</animation>
+
+<animation>
+    <type>material</type>
+    <object-name>NWS-on</object-name>
+    <emission>
+      <factor-prop>controls/gear/nose-wheel-steering</factor-prop>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+    </emission>
+    <texture>Neon orange.png</texture>
+  </animation>
+ 
+
+</PropertyList>

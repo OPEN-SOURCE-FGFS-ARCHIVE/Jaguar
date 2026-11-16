@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+    <minimum-fg-version>2017.2.0</minimum-fg-version>
+    <description>SEPECAT Jaguar GR3 (yasim )</description>
+	 <aircraft-version>6.0</aircraft-version>
+    <status>6.0</status>
+        <tags>
+		<tag>FGUK</tag>
+            <tag>fighter</tag>
+            <tag>jet</tag>
+            <tag>twin-engine</tag>
+            <tag>retractable-gear</tag>
+            <tag>ifr</tag>
+        </tags>
+        <rating>
+            <FDM type="int">4</FDM>
+            <systems type="int">3</systems>
+            <cockpit type="int">4</cockpit>
+            <model type="int">4</model>
+        </rating>
+
+        <author>NC-687, Emmanuel Baranger, Steve Brown, Gary Brown, Jonathan Redpath, StuartC, Nikolai V. Chr., Joshua Davidson, Richard Harrison, Avionyx</author>
+            <flight-model>yasim</flight-model>
+    <aero>jaguar-yasim</aero>
+
+    <fuel-fraction>1</fuel-fraction>
+
+	  <hud>
+      <path n="1">Aircraft/Jaguar/Hud/hud.xml</path>
+      <visibility n="1">true</visibility>
+	  <palette>
+    <color n="0">
+     <alpha type="float">0.85</alpha>
+     <antialiased type="bool">true</antialiased>
+     <brightness type="float">0.85</brightness>
+     <transparent type="bool">true</transparent>
+     <red type="float">0.38</red>
+     <green type="float">1.0</green>
+     <blue type="float">0.22</blue>
+    </color>
+    <color n="1">
+     <alpha type="float">0.85</alpha>
+     <antialiased type="bool">true</antialiased>
+     <brightness type="float">0.85</brightness>
+     <transparent type="bool">true</transparent>
+     <red type="float">1.0</red>
+     <green type="float">0.2</green>
+     <blue type="float">0.0</blue>
+    </color>
+   </palette>
+     <clipping>
+            <left type="double">-65</left>
+            <right type="double">65</right>
+            <top type="double">40</top>
+            <bottom type="double">-100</bottom>
+         </clipping>
+    </hud>
+
+    <model>
+      <path>Aircraft/Jaguar/Models/Jaguar-GR3.xml</path>
+      <fallback-model-index type="int">528</fallback-model-index>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+
+
+    <previews>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-1.jpg</path>
+      </preview>
+
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-2.jpg</path>
+      </preview>
+
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-3.jpg</path>
+      </preview>
+
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-4.jpg</path>
+      </preview>
+
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-5.jpg</path>
+      </preview>
+
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-6.jpg</path>
+      </preview>
+
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-7.jpg</path>
+      </preview>
+
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-8.jpg</path>
+      </preview>
+
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-9.jpg</path>
+      </preview>
+
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-10.jpg</path>
+      </preview>
+
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-11.jpg</path>
+      </preview>
+
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-12.jpg</path>
+      </preview>
+
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-13.jpg</path>
+      </preview>
+
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-14.jpg</path>
+      </preview>
+
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-15.jpg</path>
+      </preview>
+
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-16.jpg</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-17.jpg</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-18.jpg</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-19.jpg</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/Preview-Jaguar-GR1-20.jpg</path>
+      </preview>
+      <preview>
+        <type>interior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/InteriorPreview-Jaguar-GR1-1.jpg</path>
+      </preview>
+  </previews>
+
+  <rendering>
+  <refl_correction type="string">-0.41</refl_correction>
+            <redout>
+                <parameters>
+                    <blackout-onset-g>5.5</blackout-onset-g>
+                    <blackout-complete-g>7.9</blackout-complete-g>
+
+                    <redout-onset-g>-2.5</redout-onset-g>
+                    <redout-complete-g>-4.5</redout-complete-g>
+                </parameters>
+                <alpha type="double">0</alpha>
+                <enabled type="bool">false</enabled>
+            </redout>
+        </rendering>
+
+    <submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/Jaguar/Models/Effects/Guns/submodels.xml</path>
+     <!-- <path>Aircraft/Jaguar/Models/Weapons/loadsGR3.xml</path> -->
+      <path>Aircraft/Jaguar/Models/Weapons/pylons.xml</path>
+      <path>Aircraft/Jaguar/Systems/sub_lancer.xml</path>
+    </submodels>
+
+	    <startup>
+      <splash-texture>Aircraft/Jaguar/jaguar-splashGR3.png</splash-texture>
+    </startup>
+
+
+   <sound>
+      <path>Aircraft/Jaguar/SoundsGR3/jaguar-sound.xml</path>
+    </sound>
+
+ <!-- <checklists include="gui/checklists.xml"/>-->
+
+    <ai>
+      <scenario>refueling_demo_2</scenario>
+    </ai>
+
+ <!---  <ai>
+     <scenario n="100">wingman_Jauguar_demo</scenario>
+   </ai>-->
+
+    <help>
+      <title>Jaguar</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+	   <key>
+        <name>]</name>
+        <desc>Start/Stop engines</desc>
+      </key>
+	   <key>
+        <name>w</name>
+        <desc>Weapons mode</desc>
+      </key>
+	   <key>
+        <name>e</name>
+        <desc>Fire guns</desc>
+      </key>
+	  <key>
+        <name>q</name>
+        <desc>Toggle Radar standby</desc>
+      </key>
+	   <key>
+        <name>T</name>
+        <desc>Toggle RWR</desc>
+      </key>
+      <key>
+        <name>t</name>
+        <desc>Change Radar Distances (10, 20 40)</desc>
+      </key>
+      <key>
+        <name>R</name>
+        <desc>Activate/desactivate targeting the nearest</desc>
+      </key>
+	   <key>
+        <name>n</name>
+        <desc>Next Target</desc>
+      </key>
+
+	   <key>
+        <name>o/O</name>
+        <desc>Toggle tailhook</desc>
+      </key>
+      <key>
+        <name>Ctrl-n</name>
+        <desc>Previous Target</desc>
+      </key>
+      <key>
+        <name>u</name>
+        <desc>Toggle Refueling Probe</desc>
+      </key>
+      <line>Afterburners engage when</line>
+      <line>throttle moves past 75%</line>
+	  <line>Hard manouvering at speeds over 450kt may result in</line>
+      <line>unexpected pitch behaviour.</line>
+	  <line>Exceeding 8.5g or Lowering flaps or gear at 275kts+ may result in damage.</line>
+      <line>Cannons carry 150 rounds each. These can be reloaded  while on the ground by using the Jaguar menu.</line>
+	  <line>Droptanks will automatically switch when empty.</line>
+      <line>Takeoff with one click on the flaps at</line>
+	  <line>170 - 210 kt depending on payload.</line>
+      <line></line>
+    </help>
+
+   <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <!-- Nav lights on -->
+		  <int n="0" alias="/controls/switches/nav-lights-switch" />
+      <!-- Beacon on -->
+      <int n="1" alias="/controls/switches/beacon-switch" />
+      <!-- Landing lights on -->
+      <int n="2" alias="/controls/switches/landing-lights-switch" />
+	    <!-- Taxi light on -->
+      <int n="3" alias="/controls/switches/strobe-switch" />
+	  <int n="5" alias="/engines/engine[0]/state" />
+			<int n="6" alias="/engines/engine[1]/state" />
+			<int n="7" alias="/sim/crashed" />
+
+
+			<float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+			<float n="1" alias="/surface-positions/slat-pos-norm"/>
+			<float n="2" alias="/surface-positions/left-flap-pos-norm"/>
+			<float n="3" alias="/surface-positions/right-flap-pos-norm"/>
+			<float n="4" alias="/velocities/airspeed-kt"/>
+			<float n="6" alias="/environment/relative-humidity"/>
+			<float n="7" alias="/position/altitude-agl-ft"/>
+			<float n="8" alias="/engines/engine[0]/afterburner" /> <!-- Reheat Left Engine -->
+		        <float n="9" alias="/engines/engine[1]/afterburner" /> <!-- Reheat Right Engine -->
+			<float n="10" alias="/engines/engine/egt-degf" />
+			<float n="11" alias="/engines/engine[1]/egt-degf" />
+			<float n="12" alias="/controls/state/low_level" />
+			<float n="13" alias="/orientation/alpha-deg" /> <!-- 9 changed to 13-->
+			<float n="14" alias="/position/altitude-ft" />
+			<float n="15" alias="/environment/temperature-degc" /> <!--8 changed to 15 -->
+			<float n="16" alias="/velocities/mach" />
+			<float n="18" alias="/engines/engine[0]/nozzle-pos-norm" /> <!-- Nozzle Left Engine -->
+			<float n="19" alias="/engines/engine[1]/nozzle-pos-norm" /> <!-- Nozzle Right Engine -->
+                        <float n="20" alias="/smoke/red" />
+                        <float n="21" alias="/smoke/green" />
+                        <float n="22" alias="/smoke/blue" />
+                        <float n="23" alias="/smoke/particlepersec" />
+						<float n="24" type="double">0</float> <!--refuel probe   -->
+
+		<!-- payloads ove MP -->
+		  <string alias="/sim/weight[0]/selected" n="0"/>
+        <string alias="/sim/weight[1]/selected" n="1"/>
+        <string alias="/sim/weight[2]/selected" n="2"/>
+        <string alias="/sim/weight[3]/selected" n="3"/>
+        <string alias="/sim/weight[4]/selected" n="4"/>
+        <string alias="/sim/weight[5]/selected" n="5"/>
+        <string alias="/sim/weight[6]/selected" n="6"/>
+      </generic>
+    </multiplay>
+
+    <systems n="0">
+     <electrical>
+        <path>Aircraft/Generic/generic-electrical.xml</path>
+      </electrical>
+      <autopilot>
+        <path>Aircraft/Jaguar/System/autopilot5.xml</path>
+      </autopilot>
+	    <autopilot n="101">
+        <path>Aircraft/Jaguar/System/glass-rain.xml</path>
+      </autopilot>
+	   <autopilot n="102">
+      <path>Aircraft/Jaguar/Systems/flight_control_augmentation.xml</path>
+    </autopilot>
+    </systems>
+
+
+    <mp-systems>
+      <radar-enabled type="bool">true</radar-enabled>
+      <ecm-rwr-enabled type="bool">true</ecm-rwr-enabled>
+      <combat-enabled type="bool">true</combat-enabled>
+    </mp-systems>
+
+    <!--
+                   (0)             (6)
+                   1.L     /-\     1.R
+           _________|_____/top\_____|_________
+              |     |     \___/     |    |
+             2.L   3.L      |      3.R  2.R
+             (1)   (2)   Center    (4)  (5)
+                           (3)
+    -->
+     <weight n="0">
+      <name>pylon1.L</name>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+        <name>none</name>
+        <lbs>0</lbs>
+      </opt>
+      <opt>
+        <name>AIM-9 Sidewinder</name>
+        <lbs>190.0</lbs>
+      </opt>
+      <opt>
+        <name>ALQ-101 ECM pod</name>
+        <lbs>335.0</lbs>
+      </opt>
+    </weight>
+
+    <weight n="1">
+      <name>pylon2.L</name>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+        <name>none</name>
+        <lbs>0</lbs>
+      </opt>
+      <opt>
+        <name>AIM-9 Sidewinder</name>
+        <lbs>190.0</lbs>
+      </opt>
+      <opt>
+        <name>GBU-16</name>
+        <lbs>1094.0</lbs>
+      </opt>
+      <opt>
+        <name>MK-82</name>
+        <lbs>500.0</lbs>
+      </opt>
+      <opt>
+        <name>ALARM</name>
+        <lbs>590.0</lbs>
+      </opt>
+      <opt>
+        <name>ALQ-101 ECM pod</name>
+        <lbs>335.0</lbs>
+      </opt>
+    </weight>
+
+    <weight n="2">
+      <name>pylon3.L</name>
+      <tank>5</tank>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+        <name>none</name>
+        <lbs>0</lbs>
+      </opt>
+      <opt>
+        <name>1000 l Droptank</name>
+        <lbs>204.0</lbs>
+        <gals>211</gals>
+      </opt>
+      <opt>
+        <name>1500 l Droptank</name>
+        <lbs>645.0</lbs>
+      <gals>396</gals>
+      </opt>
+      <opt>
+        <name>GBU-16</name>
+        <lbs>1094.0</lbs>
+      </opt>
+      <opt>
+        <name>MK-82</name>
+        <lbs>500.0</lbs>
+      </opt>
+      <opt>
+        <name>2x-MK-82</name>
+        <lbs>1000.0</lbs>
+      </opt>
+      <opt>
+        <name>ALARM</name>
+        <lbs>590.0</lbs>
+      </opt>
+      <opt>
+        <name>SeaEagle</name>
+        <lbs>1276.0</lbs>
+      </opt>
+    </weight>
+
+    <weight n="3">
+      <name>pylon.C</name>
+      <tank>6</tank>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+        <name>none</name>
+        <lbs>0</lbs>
+      </opt>
+      <opt>
+        <name>1000 l Droptank</name>
+        <lbs>204.0</lbs>
+        <gals>211</gals>
+      </opt>
+      <opt>
+        <name>2x-MK-82</name>
+        <lbs>1000.0</lbs>
+      </opt>
+      <opt>
+        <name>ALARM</name>
+        <lbs>590.0</lbs>
+      </opt>
+      <opt>
+        <name>SeaEagle</name>
+        <lbs>1276.0</lbs>
+      </opt>
+    </weight>
+
+    <weight n="4">
+      <name>pylon3.R</name>
+      <tank>7</tank>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+        <name>none</name>
+        <lbs>0</lbs>
+      </opt>
+      <opt>
+        <name>GBU-16</name>
+        <lbs>1094.0</lbs>
+      </opt>
+      <opt>
+        <name>1000 l Droptank</name>
+        <lbs>204.0</lbs>
+        <gals>211</gals>
+      </opt>
+      <opt>
+        <name>1500 l Droptank</name>
+        <lbs>645.0</lbs>
+        <gals>396</gals>
+      </opt>
+      <opt>
+        <name>MK-82</name>
+        <lbs>500.0</lbs>
+      </opt>
+      <opt>
+        <name>2x-MK-82</name>
+        <lbs>1000.0</lbs>
+      </opt>
+      <opt>
+        <name>ALARM</name>
+        <lbs>590.0</lbs>
+      </opt>
+      <opt>
+        <name>SeaEagle</name>
+        <lbs>1276.0</lbs>
+      </opt>
+    </weight>
+
+    <weight n="5">
+      <name>pylon2.R</name>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+        <name>none</name>
+        <lbs>0</lbs>
+      </opt>
+      <opt>
+        <name>AIM-9 Sidewinder</name>
+        <lbs>190.0</lbs>
+      </opt>
+      <opt>
+        <name>GBU-16</name>
+        <lbs>1094.0</lbs>
+      </opt>
+      <opt>
+        <name>MK-82</name>
+        <lbs>500.0</lbs>
+      </opt>
+      <opt>
+        <name>ALARM</name>
+        <lbs>590.0</lbs>
+      </opt>
+    </weight>
+
+    <weight n="6">
+      <name>pylon1.R</name>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+        <name>none</name>
+        <lbs>0</lbs>
+      </opt>
+      <opt>
+        <name>AIM-9 Sidewinder</name>
+        <lbs>190.0</lbs>
+      </opt>
+    </weight>
+
+    <weight n="5">
+      <name>pylon2.R</name>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+        <name>none</name>
+        <lbs>0</lbs>
+      </opt>
+      <opt>
+        <name>AIM-9 Sidewinder</name>
+        <lbs>190.0</lbs>
+      </opt>
+      <opt>
+        <name>GBU-16</name>
+        <lbs>1094.0</lbs>
+      </opt>
+      <opt>
+        <name>MK-82</name>
+        <lbs>500.0</lbs>
+      </opt>
+      <opt>
+        <name>ALARM</name>
+        <lbs>590.0</lbs>
+      </opt>
+      <opt>
+        <name>ALQ-101 ECM pod</name>
+        <lbs>335.0</lbs>
+      </opt>
+    </weight>
+
+    <weight n="6">
+      <name>pylon1.R</name>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+        <name>none</name>
+        <lbs>0</lbs>
+      </opt>
+      <opt>
+        <name>AIM-9 Sidewinder</name>
+        <lbs>190.0</lbs>
+      </opt>
+      <opt>
+        <name>ALQ-101 ECM pod</name>
+        <lbs>335.0</lbs>
+      </opt>
+    </weight>
+
+    <weight n="7">
+      <name>Crew</name>
+      <weight-lb>200</weight-lb>
+      <min-lb>200</min-lb>
+      <max-lb>400</max-lb>
+    </weight>
+
+    <weight n="7">
+      <name>Crew</name>
+      <weight-lb>200</weight-lb>
+      <min-lb>200</min-lb>
+      <max-lb>400</max-lb>
+    </weight>
+
+
+    <current-view>
+      <field-of-view>73.5</field-of-view>
+    </current-view>
+
+    <replay>
+      <disable>0</disable>
+    </replay>
+
+    <menubar include="Dialogs/jaguarGR3-menu.xml"/>
+
+	<!--	<flight-recorder>
+    <replay-config type="int">0</replay-config>
+    <config n="0">
+      <signals include="/Aircraft/Generic/flightrecorder/components/environment.xml" />
+      <signals include="/Aircraft/Generic/flightrecorder/components/position.xml" />
+      <signals include="/Aircraft/Generic/flightrecorder/components/controls.xml" />
+      <signals include="/Aircraft/Generic/flightrecorder/components/engine-jet.xml">
+        <count type="int">2</count>
+      </signals>
+      <signals include="/Aircraft/Generic/flightrecorder/components/faults-engines.xml">
+        <count type="int">2</count>
+      </signals>
+      <signals include="/Aircraft/Generic/flightrecorder/components/tanks.xml">
+        <count type="int">3</count>
+      </signals>
+      <signals include="/Aircraft/Generic/flightrecorder/components/gear-retractable.xml">
+        <count type="int">3</count>
+      </signals>
+      <signal>
+        <type>float</type>
+        <property type="string">engines/engine[0]/augmentation</property>
+      </signal>
+      <signal>
+        <type>float</type>
+        <property type="string">engines/engine[1]/augmentation</property>
+      </signal>
+      <signal>
+        <type>float</type>
+        <property type="string">/surface-positions/speedbrake-pos-norm</property>
+      </signal>
+
+      <name type="string">Sepecat Jaguar</name>
+    </config>
+  </flight-recorder>-->
+
+    <instrumentation>
+      <path>Aircraft/Jaguar/Systems/instrumentation.xml</path>
+    </instrumentation>
+
+  </sim>
+
+
+ <systems>
+  <electrical>
+        <path>Aircraft/Generic/generic-electrical.xml</path>
+      </electrical>
+      <autopilot>
+        <path>Aircraft/Jaguar/System/autopilot5.xml</path>
+      </autopilot>
+  <refuel>
+   <type>probe</type>
+   <serviceable type="bool">true</serviceable>
+   <max-fuel-transfer-lbs-min>6000</max-fuel-transfer-lbs-min>
+   <offset-x-m>0</offset-x-m>
+   <offset-y-m>0</offset-y-m>
+   <offset-z-m>0</offset-z-m>
+  </refuel>
+ </systems>
+
+    <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <running>false</running>
+    </engine>
+    <engine n="2">
+      <engine-num type="int">1</engine-num>
+      <running>false</running>
+    </engine>
+  </engines>
+
+  <canopy>
+         <position-norm type="double">0.0</position-norm>
+  </canopy>
+
+<!--	<autopilot>
+		<settings>
+			<aileron-deadzone>0.1</aileron-deadzone>
+			<elevator-deadzone>0.1</elevator-deadzone>
+    </settings>
+    <locks>
+      <autothrottle-permit-augmentation type="int">0</autothrottle-permit-augmentation>
+    </locks>
+	</autopilot>
+
+  <jaguar>
+    <displays>
+      <live-map type="bool">true</live-map>
+      <scale type="int">0</scale>
+    </displays>
+  </jaguar>
+
+	<fdm>
+		<jsbsim>
+	    	<inertia>
+				<tank-wing-left-fitted alias="/jaguar/wingtankL1200"/>
+				<tank-centre-fitted alias="/jaguar/ventraltank1200"/>
+				<tank-wing-right-fitted alias="/jaguar/wingtankR1200"/>
+		</inertia>
+		<fcs>
+    	    	<rudder-gearing-master-switch-85c type="double">0</rudder-gearing-master-switch-85c>
+    	    	<fuel-probe-pos-dmd type="int">0</fuel-probe-pos-dmd>
+				<slats-deg type="double">0</slats-deg>
+	        	<slats-cmd-deg type="double">0</slats-cmd-deg>
+    	    	<speedbrake-pos-deg type="double">0</speedbrake-pos-deg>
+				<canopy>
+					<engage type="bool">0</engage>
+					<serviceable type="bool">1</serviceable>
+					<has-power type="bool">1</has-power>
+					<hinges>
+						<serviceable type="bool">1</serviceable>
+					</hinges>
+				</canopy>
+			</fcs>
+		</jsbsim>
+	</fdm>-->
+
+ <instrumentation>
+    <rwr>
+      <display-lighting-intens type="double">0.4</display-lighting-intens>
+      <symbology-lighting-intens type="double">1</symbology-lighting-intens>
+    </rwr>
+    <enav><selected type="int">3</selected></enav>
+    <radar>
+      <range type="int" archive="y">40</range>
+      <range-factor type="double" archive="n">0.001888</range-factor>
+      <minimized type="bool" archive="y">false</minimized>
+      <selected type="int">3</selected>
+      <!-- inicio en pruebas -->
+      <enabled type="bool">true</enabled>
+      <az-field type="double">120</az-field>
+      <range type="double">150</range>
+      <range-selected type="double">50</range-selected>
+      <radar2-range type="double">150</radar2-range>
+      <display-rdr type="bool">true</display-rdr>
+      <radar-standby type="int">3</radar-standby>
+      <mode>
+        <rws type="bool">true</rws>
+        <tws-auto type="bool">false</tws-auto>
+      </mode>
+    </radar>
+    <terrain-radar>
+      <hi-elev>
+        <alt-ft type="double">-9999.9</alt-ft>
+        <lat-deg type="double">-9999.9</lat-deg>
+        <lon-deg type="double">-9999.9</lon-deg>
+        <dist-m type="double">-9999.9</dist-m>
+        <collision-status type="string">initialised</collision-status>
+      </hi-elev>
+      <settings>
+        <mode type="string">extend</mode>
+        <state type="string">off</state>
+        <range-m type="double">2500</range-m>
+        <step-m type="double">250</step-m>
+        <max-climb-rate-fps type="double">120</max-climb-rate-fps>
+        <hi-elev-markers type="bool">false</hi-elev-markers>
+      </settings>
+    </terrain-radar>
+  </instrumentation>
+
+  <!-- set up control properties for YASim -->
+  <controls>
+
+     <flight>
+        <slats type="double">0</slats>
+     </flight>
+
+    <gear>
+      <brake-parking type="double">1.0</brake-parking>
+    </gear>
+
+
+    <armament>
+      <station n="0">
+        <release type="bool">false</release>
+      </station>
+      <station n="1">
+        <release type="bool">false</release>
+      </station>
+      <station n="2">
+        <release type="bool">false</release>
+      </station>
+      <station n="3">
+        <release type="bool">false</release>
+      </station>
+      <station n="4">
+        <release type="bool">false</release>
+      </station>
+      <station n="5">
+        <release type="bool">false</release>
+      </station>
+      <station n="6">
+        <release type="bool">false</release>
+      </station>
+    </armament>
+
+  </controls>
+
+  <environment>
+    <turbulence>
+      <use-cloud-turbulence>true</use-cloud-turbulence>
+    </turbulence>
+    <aircraft-effects>
+      <overlay-alpha type="double">0.45</overlay-alpha>
+      <use-overlay type="int">1</use-overlay>
+      <reflection-strength type="double">0.25</reflection-strength>
+    </aircraft-effects>
+  </environment>
+
+  <input>
+    <keyboard include="NasalGR3/jaguar-keyboard.xml"/>
+  </input>
+
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <running>false</running>
+    </engine>
+    <engine n="2">
+      <engine-num type="int">1</engine-num>
+      <running>false</running>
+    </engine>
+  </engines>
+
+<consumables>
+    <fuel>
+      <tank n="0">
+        <tank-num type="int">0</tank-num>
+        <level-gal_us archive="y">2200</level-gal_us>
+      </tank>
+      <tank n="1">
+        <tank-num type="int">1</tank-num>
+        <level-gal_us archive="y">2200</level-gal_us>
+      </tank>
+      <tank n="2">
+        <tank-num type="int">2</tank-num>
+        <level-gal_us archive="y">1031</level-gal_us>
+      </tank>
+      <tank n="3">
+        <tank-num type="int">3</tank-num>
+        <level-gal_us archive="y">1031</level-gal_us>
+      </tank>
+      <tank n="4">
+        <tank-num type="int">4</tank-num>
+        <level-gal_us archive="y">1031</level-gal_us>
+      </tank>
+      <tank n="5">
+        <name>left-Tank</name>
+        <selected type="bool">false</selected>
+      </tank>
+      <tank n="6">
+        <name>Center-tank</name>
+        <selected type="bool">false</selected>
+      </tank>
+      <tank n="7">
+        <name>right-Tank</name>
+        <selected type="bool">false</selected>
+      </tank>
+    </fuel>
+  </consumables>
+
+
+
+
+  <nasal>
+
+
+	  <FG1000>
+	<file>Aircraft/Jaguar/Nasal/FGUK1000.nas</file>
+
+	</FG1000>
+
+	  <doors>
+      <file>Aircraft/Jaguar/NasalGR3/doors.nas</file>
+    </doors>
+    <jaguar>
+
+      <file>Aircraft/Jaguar/NasalGR3/liveries.nas</file>
+      <file>Aircraft/Jaguar/NasalGR3/doors.nas</file>
+
+    </jaguar>
+
+	 <lights>
+      <file>Aircraft/Jaguar/NasalGR3/Lights.nas</file>
+    </lights>
+
+    <low>
+      <file>Aircraft/Jaguar/NasalGR3/low.nas</file>
+    </low>
+    <guns>
+      <file>Aircraft/Jaguar/NasalGR3/weapons.nas</file>
+      <file>Aircraft/Jaguar/NasalGR3/revi.nas</file>
+    </guns>
+		<chronograph>
+			<file>Aircraft/Jaguar/Models/Interior/Panel/Instruments/clock/chronograph.nas</file>
+		</chronograph>
+    <aar>
+      <file>Aircraft/Generic/aar.nas</file>
+    </aar>
+    <rwr>
+      <!-- <file>Aircraft/Instruments-3d/rwr/rwr.nas</file> -->
+      <file>Aircraft/Jaguar/Models/Interior/Panel/Instruments/rwr/rwr.nas</file>
+    </rwr>
+
+	 <hud>
+      <file>Aircraft/Jaguar/NasalGR3/MiscRwr.nas</file>
+    </hud>
+
+    <radardist>
+      <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+    </radardist>
+
+    <radar>
+      <file>Aircraft/Jaguar/NasalGR3/radar.nas</file>
+    </radar>
+    <radar2>
+      <file>Aircraft/Jaguar/NasalGR3/radar2.nas</file>
+    </radar2>
+    <enav>
+      <file>Aircraft/Jaguar/NasalGR3/enav.nas</file>
+    </enav>
+
+    <tfs>
+		  <file>Aircraft/Jaguar/NasalGR3/tfs.nas</file>
+    </tfs>
+
+    <weapons>
+		  <file>Aircraft/Jaguar/NasalGR3/weapons.nas</file>
+
+  	</weapons>
+
+	 <engines>
+   <file>Aircraft/Jaguar/NasalGR3/generic-yasim-engine.nas</file>
+  </engines>
+
+  <emu>
+   <file>Aircraft/Jaguar/NasalGR3/emu.nas</file>
+  </emu>
+
+  <fuel>
+   <file>Aircraft/Jaguar/NasalGR3/fuel.nas</file>
+  </fuel>
+
+
+	  <load>
+      <file>Aircraft/Jaguar/NasalGR3/ext_stores.nas</file>
+    </load>
+
+  </nasal>
+
+</PropertyList>

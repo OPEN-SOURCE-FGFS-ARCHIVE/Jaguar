@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">RAF 41 Sqdn "Display Colours #2"</name>
+        <texture>Liveries/RAF41S_3.png</texture>
+
+      </livery>
+    </model>
+	<rendering>
+    <refl_correction type="string">-0.35</refl_correction>
+    </rendering>
+  </sim>
+
+</PropertyList>

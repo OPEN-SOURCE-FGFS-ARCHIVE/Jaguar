@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <key n="101">
+    <name>e</name>
+    <desc>Guns</desc>
+    <binding>
+      <command>property-assign</command>
+      <property>controls/armament/trigger</property>
+      <value>1</value>
+    </binding>
+    <mod-up>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/armament/trigger</property>
+        <value>0</value>
+      </binding>
+    </mod-up>
+  </key>
+  <key n="109">
+      <name>m</name>
+      <desc>Masterarm</desc>
+      <binding>
+          <command>nasal</command>
+          <script><![CDATA[
+                  setprop("controls/armament/master-arm",!getprop("controls/armament/master-arm"));
+                  screen.log.write("Master-arm "~(getprop("controls/armament/master-arm")==0?"OFF":"ON"), 0.5, 0.5, 1);
+              
+          ]]></script>
+      </binding>
+  </key>
+<key n="119">
+                <name>w</name>
+                <desc>Cycle Weapon Type</desc>
+                <binding n="2">
+                    <command>nasal</command>
+                    <condition>
+                            <and>
+                            <not-equals>
+                                <property>sim/current-view/name</property>
+                                <value>Walk View</value>
+                            </not-equals>
+                            <not-equals>
+                                <property>sim/current-view/name</property>
+                                <value>Walker Orbit View</value>
+                            </not-equals>
+                            </and>
+                     </condition>
+                    <script>pylons.fcs.cycleLoadedWeapon();</script>
+                </binding>
+            </key>
+   <key n="68">
+    <name>D</name>
+    <desc>Passenger door</desc>
+    <binding>
+      <command>nasal</command>
+      <script>doors.doorsystem.passengerexport();</script>
+    </binding>
+  </key>
+
+   <key n="100">
+    <name>d</name>
+    <desc>Crew door</desc>
+    <binding>
+      <command>nasal</command>
+      <script>doors.doorsystem.crewexport();</script>
+    </binding>
+  </key>
+
+         <key n="76">
+            <name>L</name>
+            <desc>Deploy slats</desc>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-cycle</command>
+                <property>fdm/jsbsim/fcs/slats-cmd-deg</property>
+                <value type="int">0</value>
+                <value type="int">9</value>
+                <value type="int">23</value>
+                <wrap>false</wrap>
+            </binding>
+        </key>
+
+         <key n="108">
+            <name>l</name>
+            <desc>Retract slats</desc>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-cycle</command>
+                <property>fdm/jsbsim/fcs/slats-cmd-deg</property>
+                <value type="int">23</value>
+                <value type="int">9</value>
+                <value type="int">0</value>
+                <wrap>false</wrap>
+            </binding>
+        </key>
+  
+   <key n="123">
+     <name>}</name>
+     <desc>Engine Autostop</desc>
+    <binding>
+        <command>nasal</command>
+        <script>emu.autostop();</script>
+    </binding>
+  </key>
+  
+   <key n="125">
+     <name>}</name>
+     <desc>Engine Autostart</desc>
+    <binding>
+        <command>nasal</command>
+        <script>emu.autostart();</script>
+    </binding>
+  </key>
+ 
+
+<key n="117">
+		<name>u</name>
+		<desc>Cycle through the refuelling probe switch positions</desc>
+		<binding>
+			<command>property-toggle</command>
+			<property>/controls/switches/fuel-probe</property>
+		</binding>
+	</key>
+
+</PropertyList>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <default>
+    <menu n="10">
+      <label>Jaguar GR1</label>
+      <enabled type="bool">true</enabled>
+      <item>
+        <label>Engine Start</label>
+        <binding>
+          <command>nasal</command>
+          <script>engines.quickstart()</script>
+        </binding>
+      </item>
+      <item>
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item>
+      <item>
+        <label>Reload Gun</label>
+        <binding>
+          <command>nasal</command>
+          <script>pylons.cannon_load();</script>
+        </binding>
+      </item>
+      <item>
+        <label>Misc</label>
+        <binding>
+          <command>dialog-show</command>
+          <dialog-name>stuff</dialog-name>
+        </binding>
+      </item>
+
+<!--	 <item>
+        <label>No load</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.clean()</script>
+        </binding>
+      </item>
+
+	  <item>
+        <label>Ferry configuration</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.Ferry()</script>
+        </binding>
+      </item>
+
+	  <item>
+        <label>CAS Bombs</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.casbomb()</script>
+        </binding>
+      </item>
+
+	<item>
+        <label>CAS Bombs - extended range</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.casbomblong()</script>
+        </binding>
+      </item>
+
+	  <item>
+        <label>CAS LGB</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.caslgb()</script>
+        </binding>
+      </item>
+
+	   <item>
+        <label>CAS Multi mode</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.casmulti()</script>
+        </binding>
+      </item>
+
+	  <item>
+        <label>Anti Radiation</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.radiation()</script>
+        </binding>
+      </item>
+
+	  <item>
+        <label>Anti Radiation. Extended range</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.radiationlong()</script>
+        </binding>
+      </item>
+
+	   <item>
+        <label>Anti Ship</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.antiship()</script>
+        </binding>
+      </item>
+
+	   <item>
+        <label>Anti Ship. Extended range</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.antishiplong()</script>
+        </binding>
+      </item>-->
+	 </menu>
+
+  </default>
+
+</PropertyList>

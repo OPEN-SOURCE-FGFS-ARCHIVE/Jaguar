@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">RAF 54 Sqdn. (arctic camo.)</name>
+        <texture>Liveries/RAF54S.png</texture>
+
+            
+      </livery>
+    </model>
+	<rendering>
+    <refl_correction type="string">-0.38</refl_correction>
+    </rendering>
+  </sim>
+
+</PropertyList>
